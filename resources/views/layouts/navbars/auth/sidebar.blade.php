@@ -31,6 +31,17 @@
         </a>
       </li>
       <li class="nav-item mt-2">
+        <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Transactions</h6>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link {{ (Request::is('transactions') ? 'active' : '') }} " href="{{ route('transaction.index') }}">
+            <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center {{ (Request::is('transactions') ? 'text-white' : 'text-dark') }}">
+              <i class="fa-solid fa-images"></i>
+            </div>
+            <span class="nav-link-text ms-1">Transaksi Customer</span>
+        </a>
+      </li>
+      <li class="nav-item mt-2">
         <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Content Management System</h6>
       </li>
       <li class="nav-item">
@@ -39,6 +50,14 @@
               <i class="fa-solid fa-images"></i>
             </div>
             <span class="nav-link-text ms-1">Banner</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link {{ (Request::is('cms/about-company/1') ? 'active' : '') }} " href="{{ route('cms.about-company.show', 1) }}">
+            <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center {{ (Request::is('cms/about-company/1') ? 'text-white' : 'text-dark') }}">
+              <i class="fa-solid fa-building"></i>
+            </div>
+            <span class="nav-link-text ms-1">About Company</span>
         </a>
       </li>
       <li class="nav-item mt-2">
