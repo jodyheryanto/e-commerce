@@ -41,6 +41,17 @@
             <span class="nav-link-text ms-1">Banner</span>
         </a>
       </li>
+      <li class="nav-item mt-2">
+        <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Master Data</h6>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link {{ (Request::is('master-data/product') ? 'active' : '') }} " href="{{ route('master-data.product.index') }}">
+            <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center {{ (Request::is('master-data/product') ? 'text-white' : 'text-dark') }}">
+              <i class="fa-solid fa-boxes-stacked"></i>
+            </div>
+            <span class="nav-link-text ms-1">Produk</span>
+        </a>
+      </li>
       <li class="nav-item pb-2">
         <a class="nav-link {{ (Request::is('user-management') ? 'active' : '') }}" href="{{ url('user-management') }}">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
